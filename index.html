@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Блог YouTalk о психотерапии, самопомощи, отношениях и личных границах."
+    />
+    <title>YouTalk - Блог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/layout.js" defer></script>
+  </head>
+  <body class="page">
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <div data-layout="header"></div>
+
+    <main class="page__main blog" id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+            <li class="breadcrumbs__item" aria-current="page">Блог</li>
+          </ol>
+        </nav>
+
+        <section class="blog__intro" aria-labelledby="blog-title">
+          <h1 class="blog__title" id="blog-title">Блог</h1>
+          <div class="tags" aria-label="Темы блога">
+            <button class="tag tag--active" type="button" data-filter="all" aria-pressed="true">
+              <img class="tag__icon" src="assets/emoji-smile.png" alt="" />Все
+            </button>
+            <button class="tag" type="button" data-filter="self-esteem" aria-pressed="false">Самооценка и самопринятие</button>
+            <button class="tag" type="button" data-filter="self" aria-pressed="false">
+              <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+            </button>
+            <button class="tag" type="button" data-filter="feelings" aria-pressed="false">Чувства и эмоции</button>
+            <button class="tag" type="button" data-filter="anxiety" aria-pressed="false">Тревога</button>
+            <button class="tag" type="button" data-filter="exercise" aria-pressed="false">Упражнения</button>
+            <button class="tag" type="button" data-filter="food" aria-pressed="false">Психология питания</button>
+            <button class="tag" type="button" data-filter="violence" aria-pressed="false">Насилие</button>
+            <button class="tag" type="button" data-filter="health" aria-pressed="false">Личное здоровье</button>
+          </div>
+        </section>
+
+        <section class="articles" aria-label="Список статей">
+          <div class="articles__featured">
+            <article class="card card--large" data-tags="self-esteem self feelings health">
+              <a class="card__link" href="article.html" aria-label="Открыть статью об эмоциональном выгорании"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-angry.png" alt="Яйца с нарисованными эмоциями" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Самооценка и самопринятие
+                  </span>
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">
+                  Эмоциональное выгорание - стадии и симптомы, методы восстановления и профилактики
+                </h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__excerpt">
+                  Изначально термин эмоциональное профессиональной сфере и относился...
+                </p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card card--large" data-tags="self anxiety feelings exercise">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о тревоге"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-people.png" alt="Человек бежит по дорожке в парке" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">
+                  Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях...
+                </p>
+                <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </article>
+          </div>
+
+          <div class="articles__grid">
+            <article class="card" data-tags="self-esteem food health">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о восстановлении"></a>
+              <div class="card__media">
+                <img src="assets/blog-base-1.png" alt="Девушка лежит на кровати" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Самооценка и самопринятие
+                  </span>
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Психология питания
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание - стадии и симптомы, методы восстановления и профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__excerpt">Изначально термин эмоциональное профессиональной сфере и относился...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card" data-tags="self anxiety feelings">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о страхах"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-laptop.png" alt="Девушка спокойно плавает в бассейне" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом...</p>
+                <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card" data-tags="self feelings exercise">
+              <a class="card__link" href="article.html" aria-label="Открыть статью об эмоциях"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-bed.png" alt="Плакат с сердитым лицом на кирпичной стене" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции.</p>
+                <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card" data-tags="self health exercise">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о профилактике"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-video.png" alt="Женщина работает за ноутбуком" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание - стадии и симптомы, методы восстановления</h2>
+                <p class="card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                <p class="card__excerpt">Изначально термин эмоциональное выгорание появился в профессиональной среде.</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card" data-tags="self anxiety">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о тревоге и страхах"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-run.png" alt="Онлайн-разговор по видеосвязи" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">Один из самых важных навыков - умение по-разному обходиться со страхом.</p>
+                <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card" data-tags="self feelings exercise">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о контроле эмоций"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-swim.png" alt="Люди стоят в белом пространстве" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Self
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции.</p>
+                <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card card--extra" data-tags="self-esteem violence feelings">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о личных границах"></a>
+              <div class="card__media">
+                <img src="assets/blog-card-angry.png" alt="Яйца с нарисованными эмоциями" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Самооценка
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Личные границы: как говорить «нет» и не чувствовать вину</h2>
+                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="card__excerpt">Почему нам бывает сложно отказывать и как бережно возвращать себе опору.</p>
+                <time class="card__date" datetime="2021-08-05">05.08.2021</time>
+              </div>
+            </article>
+
+            <article class="card card--extra" data-tags="food health exercise">
+              <a class="card__link" href="article.html" aria-label="Открыть статью о психологии питания"></a>
+              <div class="card__media">
+                <img src="assets/blog-base-1.png" alt="Девушка лежит на кровати" />
+                <div class="card__badges">
+                  <span class="tag tag--overlay">
+                    <img class="tag__icon" src="assets/emoji-unicorn.png" alt="" />Психология питания
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Психология питания: как слышать тело без жестких запретов</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__excerpt">Несколько мягких практик для восстановления контакта с голодом и насыщением.</p>
+                <time class="card__date" datetime="2021-08-02">02.08.2021</time>
+              </div>
+            </article>
+          </div>
+
+          <div class="articles__actions">
+            <button class="button button--primary articles__more" type="button" data-action="toggle-more">Ещё</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div data-layout="footer"></div>
+  </body>
+</html>

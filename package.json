@@ -1,0 +1,9 @@
+{
+  "name": "youtalk-blog-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static adaptive YouTalk blog pages from Figma.",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
